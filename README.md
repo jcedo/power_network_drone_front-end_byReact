@@ -1,3 +1,43 @@
+# A project of power gird drone
+
+## Commit rule
+- <`type`>(<`scope`>): <`subject`>
+
+1. About `type`
+
+`You should select a type in following to explain what your commit do.`
+
+feat: new feature
+
+fix: fix bug
+
+docs: new or add document
+
+style: code style change
+
+refactor
+
+test
+
+chore: other change
+
+2. About `scope`
+
+`This is not a obligatory selection.
+You can fill it to describe the scope of this commit working`
+
+3. About `subject`
+
+`Describe the detail of this commit`
+## future
+- Real-time video
+- Fault test
+- Show the location of electric tower
+- Control the drone
+- Show the status of drone
+
+
+# Raw develop guideline
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
