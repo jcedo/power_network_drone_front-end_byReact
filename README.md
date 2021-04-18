@@ -37,7 +37,7 @@ You can fill it to describe the scope of this commit working`
 - Show the status of drone
 
 
-# Raw develop guideline
+# Raw develop guideline(原生开发指引)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

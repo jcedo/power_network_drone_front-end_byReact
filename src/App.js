@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React,{ useState} from 'react';
+import BasicLayout from './BasicLayout';
 import './App.css';
+import Video from './page/video/index.js';
 
-function App() {
+// 将key与页面在此一一对应即可
+const pageList = {
+  '1': <Video/>
+}
+
+
+const App = () => {
+
+  const [pageKey, setPageKey] = useState('1');
+
+  // 根据BasicLayout的选择改变显示的页面
+  const selectPage = (key = '1') => {
+    setPageKey(key);
+  }
+
+  const renderPage = (key) => {
+    if(key in pageList){
+      return pageList[key];
+    }
+    return <div>No the Page</div>;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BasicLayout selectPage={selectPage}>
+        Power Grid Drone Project
+        {renderPage(pageKey)}
+      </BasicLayout>
     </div>
   );
 }
