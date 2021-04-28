@@ -6,3 +6,17 @@
 .site-layout-background {
   background: #ffffff !important;
 }
+
+.layout-content {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+.layout-footer {
+  margin: 0 1rem;
+  background-color: #ffffff !important;
+  text-align: 'center';
+  font-size: 12px !important;
+}

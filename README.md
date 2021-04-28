@@ -36,6 +36,10 @@ You can fill it to describe the scope of this commit working`
 - Control the drone
 - Show the status of drone
 
+# The construction of the project
+
+This project base in create-react-app library
+Its entry is `/src/App.js`, I make a simple router system in `App.js` and it will optimize 
 
 # Raw develop guideline(原生开发指引)
 # Getting Started with Create React App

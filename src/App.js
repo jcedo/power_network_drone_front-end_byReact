@@ -1,11 +1,19 @@
 import React,{ useState} from 'react';
 import BasicLayout from './BasicLayout';
 import './App.css';
-import Video from './page/video/index.js';
+import Video from './page/Video';
+import Status from './page/Status';
+import Path from './page/Path';
+import Control from './page/Control';
+import Log from './page/Log';
 
 // 将key与页面在此一一对应即可
 const pageList = {
-  '1': <Video/>
+  '1': <Status/>,
+  '2': <Path/>,
+  '3': <Video/>,
+  '4': <Control/>,
+  '5': <Log/>
 }
 
 
@@ -25,10 +33,10 @@ const App = () => {
     return <div>No the Page</div>;
   }
 
+  // html
   return (
     <div className="App">
       <BasicLayout selectPage={selectPage}>
-        Power Grid Drone Project
         {renderPage(pageKey)}
       </BasicLayout>
     </div>
