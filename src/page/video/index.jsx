@@ -1,9 +1,13 @@
 import React from 'react';
+import FlvPlayer from './FlvPlayer';
 
 const Video = () => {
-    return (
-        <div>Video Player</div>
-    )
-}
 
+  return (
+    <div>
+      <FlvPlayer/>
+    </div>
+  )
+}
+ 
 export default Video;

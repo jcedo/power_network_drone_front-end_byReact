@@ -46,11 +46,11 @@ const data = [
 ];
 
 const Status = () => {
-    return (
-        <div>
-            <Table columns={columns} dataSource={data} />
-        </div>
-    )
+  return (
+    <div>
+      <Table columns={columns} dataSource={data} />
+    </div>
+  )
 }
 
 export default Status;
