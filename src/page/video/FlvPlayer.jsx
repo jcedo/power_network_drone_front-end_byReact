@@ -20,7 +20,7 @@ const FlvPlayer = () => {
   
   return (
     <video name="videoElement" id="videoElement" class="centeredVideo" controls muted autoplay width="100%" height="100%">
-      
+      {/* TODO: 开关播放+开始录制+停止录制+保存本地/上传+.... */}
     </video>
   )
 }

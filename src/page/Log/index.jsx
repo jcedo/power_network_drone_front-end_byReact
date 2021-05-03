@@ -11,6 +11,8 @@ const logList = [
 var myInterval;
 
 const Log = () => {
+
+  // TODO: 布局分为三块，目前写好的部分放左上侧，该部分显示故障图片(可进行放缩和恢复)和文字，右上侧标注各故障类型，底侧判断故障类型
   
   clearInterval(myInterval);
 

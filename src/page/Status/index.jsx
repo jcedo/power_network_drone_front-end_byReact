@@ -16,6 +16,7 @@ const contentStyle = {
 
 // 无人机状态分页面
 const Status = () => {
+    // TODO: 对无人机各参数（需要调用后端接口的数据）进行处理 ( 对实时数据如电量、续航时间进行动态显示 )
     return (
         <div className='status'>
           <Divider className='divider'>参数面板</Divider>

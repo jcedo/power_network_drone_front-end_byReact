@@ -67,6 +67,8 @@ const BasicLayout = (props) => {
       
       <Layout className='layout'>
         <Header className="site-layout-background" style={{ padding: 0 }}>
+          {/* TODO: 我的预想是把五个模块分页的头部单独设计成可以拉取其他分页的一部分内容共同展示，
+                    比如视频监控可以显示轨迹图和无人机、电塔的参数； *另外留出一块地方用作登录注册* */}
           <div className='menu'>主菜单导航</div>
           <Nav className='nav'/>
           {/* <div className='more'>了解更多 &gt;&gt;</div> */}

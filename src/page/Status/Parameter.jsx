@@ -4,7 +4,7 @@ import './index.css';
 
 const Parameter = () => {
   return (
-    <div>123</div>
+    <div></div>
   )
 }
 
