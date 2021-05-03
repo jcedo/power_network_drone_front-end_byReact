@@ -1,0 +1,43 @@
+.status {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.status .divider {
+  width: 100%;
+  font-weight: 700;
+  padding: 0;
+  margin: 10px 0;
+}
+.status .carousel {
+  width: 100%;
+  background-color: #ddd;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.status .carousel div {
+  width: 100%;
+  height: 100%;
+}
+.status .carousel div h3 {
+  width: 100%;
+  height: 100% !important;
+  line-height: 25rem !important;
+}
+.status .carousel .page {
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.status .carousel .page .title {
+  width: 50%;
+  height: 30%;
+  padding: 5px 8px;
+}
+.status .carousel .page .title .item {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}

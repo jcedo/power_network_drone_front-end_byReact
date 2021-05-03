@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
+  HomeFilled,
   DesktopOutlined,
   PieChartOutlined,
   FileOutlined,
@@ -8,8 +9,11 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 
+import Nav from './Nav';
 import './index.css';
 
+
+//主布局
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -27,25 +31,31 @@ const BasicLayout = (props) => {
     selectPage(key);
   }
 
+
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={onCollapse} >
-        <div className="logo" />
+        <div className="logo">
+          无人机平台
+        </div>
         <Menu theme="dark" defaultSelectedKeys={[menuKey]} mode="inline" onSelect={onSelect}>
-          <Menu.Item key="1" icon={<PieChartOutlined />}>
-            无人机状态
+        <Menu.Item key="1" icon={<HomeFilled />}>
+            主界大屏
           </Menu.Item>
-          <Menu.Item key="2" icon={<DesktopOutlined />}>
-            路线规划
+          <Menu.Item key="2" icon={<PieChartOutlined />}>
+            操作界面
           </Menu.Item>
-          <Menu.Item key="3" icon={<FileOutlined />}>
+          <Menu.Item key="3" icon={<DesktopOutlined />}>
             视频监控
           </Menu.Item>
-          <Menu.Item key="4" icon={<TeamOutlined />}>
-            无人机控制
+          <Menu.Item key="4" icon={<FileOutlined />}>
+            路径规划
           </Menu.Item>
-          <Menu.Item key="5" icon={<UserOutlined />}>
-            故障信息
+          <Menu.Item key="5" icon={<TeamOutlined />}>
+            无人机状态
+          </Menu.Item>
+          <Menu.Item key="6" icon={<UserOutlined />}>
+            故障检测
           </Menu.Item>
           {/* <SubMenu key="sub1" icon={<UserOutlined />} title="User">
                 <Menu.Item key="3">Tom</Menu.Item>
@@ -54,19 +64,22 @@ const BasicLayout = (props) => {
               </SubMenu> */}
         </Menu>
       </Sider>
-      <Layout>
+      
+      <Layout className='layout'>
         <Header className="site-layout-background" style={{ padding: 0 }}>
-            
+          <div className='menu'>主菜单导航</div>
+          <Nav className='nav'/>
+          {/* <div className='more'>了解更多 &gt;&gt;</div> */}
         </Header>
-          <Content className="layout-content">
-            {props.children}
-          </Content>
-        <Footer className="layout-footer">Power Grid Drone ©2021 Created by </Footer>
+
+        <Content className="layout-content">
+          {props.children}
+        </Content>
+
+        <Footer className="layout-footer">Power Grid Drone ©2021 Created by The Big data Research Group, Guangdong University Of Technology.</Footer>
       </Layout>
     </Layout>
   )
 }
 
 export default BasicLayout;
-
-

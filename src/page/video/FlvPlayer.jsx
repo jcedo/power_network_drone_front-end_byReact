@@ -19,7 +19,7 @@ const FlvPlayer = () => {
   }, [])
   
   return (
-    <video name="videoElement" id="videoElement" class="centeredVideo" controls muted autoplay width="1024" height="576">
+    <video name="videoElement" id="videoElement" class="centeredVideo" controls muted autoplay width="100%" height="100%">
       
     </video>
   )
