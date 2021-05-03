@@ -6,13 +6,13 @@ import Homepage from './page/Homepage'
 import Video from './page/Video';
 import Status from './page/Status';
 import Path from './page/Path';
-import Control from './page/Control';
+// import Control from './page/Control';
 import Log from './page/Log';
 
 // 将key与页面在此一一对应即可
 const pageList = {
   '1': <Homepage/>,
-  '2': <Control/>,
+  // '2': <Control/>,
   '3': <Video/>,
   '4': <Path/>,
   '5': <Status/>,

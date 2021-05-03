@@ -42,9 +42,9 @@ const BasicLayout = (props) => {
         <Menu.Item key="1" icon={<HomeFilled />}>
             主界大屏
           </Menu.Item>
-          <Menu.Item key="2" icon={<PieChartOutlined />}>
+          {/* <Menu.Item key="2" icon={<PieChartOutlined />}>
             操作界面
-          </Menu.Item>
+          </Menu.Item> */}
           <Menu.Item key="3" icon={<DesktopOutlined />}>
             视频监控
           </Menu.Item>
