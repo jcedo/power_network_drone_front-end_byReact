@@ -1,6 +1,8 @@
 import React,{ useState} from 'react';
 import BasicLayout from './BasicLayout';
 import './App.css';
+
+import Homepage from './page/Homepage'
 import Video from './page/Video';
 import Status from './page/Status';
 import Path from './page/Path';
@@ -9,11 +11,12 @@ import Log from './page/Log';
 
 // 将key与页面在此一一对应即可
 const pageList = {
-  '1': <Status/>,
-  '2': <Path/>,
+  '1': <Homepage/>,
+  '2': <Control/>,
   '3': <Video/>,
-  '4': <Control/>,
-  '5': <Log/>
+  '4': <Path/>,
+  '5': <Status/>,
+  '6': <Log/>
 }
 
 

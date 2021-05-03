@@ -1,0 +1,120 @@
+.path {
+    // width: 64.8rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    .path-layout {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #ddd;
+        color: #fff;
+        .sider {
+            padding-right: 10px;
+            width: 20%;
+            height: 100%;
+            background-color: #fff;
+            .card {
+                width: 100%;
+                height: 450px;
+                text-align: left;
+                overflow-y: scroll;
+                div[id^=card] {
+                    width: 100%;
+                    font-size: 8px;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+            // 走马灯-自动切换
+            .carousel {
+                width: 100%;
+                height: 100%;
+                .page {
+                    width: 100%;
+                    height: 100%;
+                    line-height: 27.9rem;
+                    color: #333;
+                    background-color: #ddd !important;
+                }
+            }
+        };
+        .layout {
+            width: 80%;
+            height: 100%;
+            z-index: 2;
+            .content {
+                display: flex;
+                width: 100%;
+                height: 70%;
+                background-color: rgba(255, 255, 255, 0.3);
+                color: #fff;
+                .tower, 
+                .route {
+                    // box-sizing: border-box;
+                    width: 50%;
+                    height: 100%;
+                    background-color: #fff;
+                };
+                .tower {
+                    // border-right: 1px solid #333;
+                    .image {
+                        margin: 0;
+                        // width: 100%;
+                        // height: 100%;
+                    }
+                };
+                .route {
+                    .image {
+                        margin: 0;
+                        // width: 100%;
+                        // height: 100%;
+                    }
+                }
+            };
+            .footer {
+                width: 100%;
+                height: 30%;
+                // border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+                // color: #333;
+                padding: 2px;
+                .divider {
+                    // height: 100%;
+                    margin-top: -5px;
+                    margin-bottom: 10px;
+                    padding: 0;
+                    font-size: 12px;
+                    font-weight: 700;
+                    background: rgba(255, 255, 255, 0.6);
+                    border-top-color: rgba(0, 0, 0, 0.3);
+                }
+                
+                .row {
+                    height: 80%;
+                    margin: 0;
+                    padding: 0;
+                    flex-wrap: nowrap;
+                    overflow-x: scroll;
+                    overflow-y:hidden;
+                    // background: #ccc;
+                    .col {
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                        .card {
+                            height: 80%;
+                        }
+                    }
+                }
+                
+                
+            }
+        }  
+    }
+}
+
+
+
+
+
+
